@@ -4,37 +4,36 @@
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
+    <div class="row">
+      <!-- left navigation -->
+      <nav class="navbar col-12">
+        <ul class="nav-left col-6">    
+          <li class="nav-left-items">sections</li>
+          
+          <li class="nav-left-items">search</li>
+        </ul>
 
-    <!-- left navigation -->
-    <nav class="navbar white">
-      <ul class="nav-left">
-        <li class="nav-left-items">sections</li>
-        
-        <li class="nav-left-items">search</li>
-      </ul>
-
-    <!-- right navigation -->
-      <ul class="nav-right">
-        <li class="nav-right-items">Subscribe Now</li>
-        <li class="nav-right-items">Log In</li>
-        <li class="nav-right-items">x</li>
-      </ul>
-    </nav>
+      <!-- right navigation -->
+        <ul class="nav-right col-6">
+          <li class="nav-right-items">x</li>
+          <li class="nav-right-items">Log In</li>
+          <li class="nav-right-items">Subscribe Now</li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="container">
       
-      <div class="logo"></div>
+      <div class="logo">
+        <img src="images/nyt-logo-379x64.png">
+      </div>
       
       <ul class="header-info">
         <li class="header-info-item">Monday, June 18, 2018</li>
@@ -71,42 +70,81 @@
       </ul>
     </div>
 
-    <div class="left-column">
-      <section id="left-news">
-        <h2 class="left-article">Both Parties Push Trump to Halt Family Separations</h2>
-        <h4>By <p id="uppercase">Peter Baker</p></h4>
-        <ul class="article-main-points">
-          <li class="article-main-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati nostrum doloremque magnam, architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
-          <li class="article-main-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati nostrum doloremque magnam, architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
-        </ul>
-        </h2>
-      </section>
-      <section id="right-news">
-        <div class="img-container"></div>
-        <p class="article-author">Max Whittaker for The New York Times</p>
-        <h3>A Renewed View of Some of the World's Oldest Rocks</h3>
-        <p class="article-default">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi eligendi perferendis dolorem itaque dolores ut optio, minima tempore, repellat natus, debitis sit ex? Dolorem vel tenetur repudiandae quod adipisci.
-        </p>
-      </section>
-    </div>
+      <!-- left column start -->
+    <div class="row">
+      <div class="left-column col-8">
+        <div class="row">  
+          <section id="left-news" class="col-4">
+            <h2 class="left-article">Both Parties Push Trump to Halt Family Separations</h2>
+            <h4>By <p id="uppercase">Peter Baker</p></h4>
+            <ul class="article-main-points">
+              <li class="article-main-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati nostrum doloremque magnam, architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
+              <li class="article-main-points">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati nostrum doloremque magnam, architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
+            </ul>
+          </h2>
+          </section>
 
-    <div class="right-column">
-      
-      <p class="text-center">Opinion</p>
-      
-      <section class="opinion-left">
-        <h5>The Riddle of Lopez Obrador</h5>
-        <p class="article-author">By GUILLERMO OSORNO</p>
-      </section>
+          <div class="second-column col-8">
+            <section id="right-news">
+              <div class="img-container"></div>
+              <p class="article-author">Max Whittaker for The New York Times</p>
+              <h3>A Renewed View of Some of the World's Oldest Rocks</h3>
+              <p class="article-default">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi eligendi perferendis dolorem itaque dolores ut optio, minima tempore, repellat natus, debitis sit ex? Dolorem vel tenetur repudiandae quod adipisci.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
 
-      <div class="vt-div"></div>
-      
-      <section class="opinion-right">
-          <h5>The Riddle of Lopez Obrador</h5>
-          <p class="article-author">By GUILLERMO OSORNO</p>
+
+      <!-- right column -->
+      <div class="right-column col-4">
+        <!-- opinion section start -->
+          <section class="opinion-section">
+            <p class="text-center">Opinion</p>
+            <div class="row">
+              <!-- opinion section left start -->
+            <section class="opinion-left col-6">
+              <h5>The Riddle of Lopez Obrador</h5>
+              <p class="article-author">By GUILLERMO OSORNO</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nisi illum officia fuga eos voluptatum at facilis error iure magni enim officiis possimus soluta similique impedit, ducimus repellendus omnis repudiandae.</p>
+              <ul class="article-main-points">
+                <li class="article-main-points">architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
+                <li class="article-main-points">architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
+              </ul>
+            </section>
+            <!-- opinion section left end -->
+            
+            <!-- opinion section right start -->
+            <section class="opinion-right col-6">
+              <h5>The Riddle of Lopez Obrador</h5>
+              <p class="article-author">By GUILLERMO OSORNO</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nisi illum officia fuga eos voluptatum at facilis error iure magni enim officiis possimus soluta similique impedit, ducimus repellendus omnis repudiandae.</p>
+              <ul class="article-main-points">
+                <li class="article-main-points">architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
+                <li class="article-main-points">architecto ex, voluptatum aspernatur porro illum quasi deserunt, explicabo sed est dolorum beatae. Quae cumque temporibus repellat.</li>
+              </ul>
+            </section>
+            <!-- opinion section right end -->
+          </div>
         </section>
+        <!-- opinion section end -->
 
+        <!-- other articles start -->
+        <div class="other-articles row">
+          <div class="other-articles-left col-6">
+            <p class="other-article-text">READER CENTER</p>
+            <p class="bold-it">How the Times Uses Anonymous Sources</p>
+          </div>
+
+          <div class="other-articles-right col-6">
+            <p class="other-article-text">THE CROSSWORD</p>
+            <p class="bold-it">Play Today's Puzzle</p>  
+        </div>
+      
+
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
